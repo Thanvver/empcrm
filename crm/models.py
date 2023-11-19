@@ -10,6 +10,8 @@ class Employees(models.Model):
     email=models.EmailField(unique=True)
     age=models.PositiveIntegerField(null=True)
     contact=models.CharField(null=True,max_length=200)
+    profile_pic=models.ImageField(upload_to="images",null=True,blank=True)
+    dob=models.DateField(null=True,blank=True)
 
     
 
